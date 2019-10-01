@@ -15,3 +15,106 @@ body {
   margin: 0 auto;
 }
 
+
+/* page-header */
+
+.page-header {
+  height: 40px;
+  background: #000;
+}
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.page-logo {
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.page-logo span {
+  color: var(--color);
+  font-weight: bold;
+}
+
+.page-nav {}
+
+.page-nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-nav-list li {
+  position: relative;
+}
+
+.page-nav-list a {
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.page-nav-list a:hover {
+  color: var(--color);
+}
+
+.page-nav-sublist::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #000;
+  position: absolute;
+  top:0;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.page-nav-sublist::after {
+  content: "";
+  width: 100%;
+  height: 15px;
+  display: block;
+  position: absolute;
+  left:0;
+  top: -15px;
+  background: transparent;
+}
+
+.page-nav-sublist {
+  position: absolute;
+  top: calc(100% + 15px);
+  left: 50%;
+  transform: translate(-50%);
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+  background: #000;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.page-nav-sublist a {
+  padding: 5px;
+  height: auto;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.page-nav-list li:hover .page-nav-sublist {
+  opacity: 1;
+  pointer-events: all;
+}
