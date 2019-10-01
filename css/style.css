@@ -30,6 +30,12 @@ body {
 }
 
 .page-logo {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.page-logo-link {
   font-size: 15px;
   color: #fff;
   text-transform: uppercase;
@@ -37,9 +43,11 @@ body {
   font-weight: 500;
 }
 
-.page-logo span {
+.page-logo-link span {
   color: var(--color);
   font-weight: bold;
+  display: inline-block;
+  margin: 0 1px;
 }
 
 .page-nav {}
