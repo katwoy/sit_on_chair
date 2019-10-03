@@ -16,6 +16,14 @@ body {
   margin: 0 auto;
 }
 
+.row {
+  display: flex;
+}
+
+.row .col + .col {
+  margin-left: 20px;
+}
+
 .btn {
   background: var(--color);
   cursor: pointer;
@@ -165,7 +173,6 @@ body {
   pointer-events: all;
 }
 
-
 .slider-bg {
   height: 500px;
   background: linear-gradient(#fafafa, #ccc)
@@ -313,4 +320,60 @@ textarea.form-control {
   height: 70px;
   font-weight: bold;
   font-size: 30px;
+}
+
+
+
+
+/* price section */
+
+.section-price {
+  background: #f1f1f1;
+}
+
+
+
+
+/* news section */
+
+.news {
+  position: relative;
+}
+
+.news-img {}
+
+.news-bar {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  width: 100%;
+  background: rgba(255,255,255,0.6);
+  padding: 15px;
+}
+
+.news-title {
+  font-size: 14px;
+  margin: 0;
+}
+
+.news-title::after {
+  content: "";
+  width: 140px;
+  height: 8px;
+  background: var(--color);
+  display: block;
+  margin-top: 3px;
+}
+
+.news-box {
+  border: 1px solid #ddd;
+  padding: 30px;
+}
+
+.news-box .news-title {
+  margin-bottom: 20px;
+}
+
+.news-box .news-text {
+  font-size: 15px;
 }
