@@ -523,3 +523,48 @@ textarea.form-control {
 .news-box .news-text {
   font-size: 15px;
 }
+
+
+
+/* footer */
+
+.footer {
+  margin-bottom: 45px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-left {
+  width: 630px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-copyright {
+  color: #aaa;
+}
+
+.footer-right {
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-socials {}
+
+.footer-logo {}
+
+.footer-logo-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #aaa;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer-logo-link span {
+  font-weight: bold;
+}
