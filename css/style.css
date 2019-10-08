@@ -96,7 +96,7 @@ body {
   margin: 0 1px;
 }
 
-.page-nav {}
+/* .page-nav {} */
 
 .page-nav-list {
   display: flex;
@@ -331,6 +331,152 @@ textarea.form-control {
   background: #f1f1f1;
 }
 
+.price-box {
+  width: 325px;
+  height: 495px;
+  border: 2px solid #ccc;
+  background: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: relative;
+}
+
+.price-box.suggested {
+  border: 2px solid var(--color);
+  background: var(--color);
+}
+
+.price-box::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: block;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  position: absolute;
+  background: #fdfdfd;
+  top: 0;
+  transform: translateY(-35px);
+}
+
+.price-box.suggested::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: block;
+  border: 2px solid var(--color);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateY(-35px);
+  background: var(--color);
+}
+
+.price-box::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  background: #ccc;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateY(-20px);
+}
+
+.price-box.suggested::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  background: #fdfdfd;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateY(-20px);
+}
+
+.price-title {
+  text-transform: uppercase;
+  color: var(--color);
+  text-align: center;
+  font-size: 27px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.price-box.suggested .price-title {
+  color: #fff;
+}
+
+.price {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #ccc;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #bbb;
+  background: #fff;
+  font-size: 18px;
+}
+
+.price-box.suggested .price {
+  border: 2px solid #fff;
+  color: var(--color);
+}
+
+.price-numbers span {
+  font-size: 45px;
+}
+
+.price-letters {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.price-option-list {
+  width: 100%;
+}
+
+.price-option {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+.price-option:first-child,
+.price-option:nth-child(3).standard {
+  background: #ddd;
+  color: #aaa;
+}
+
+.price-option:nth-child(2),
+.price-option:nth-child(4).advance {
+  background: #eee;
+  color: grey;
+}
+
+.price-box.suggested .price-option:first-child,
+.price-box.suggested .price-option:nth-child(3) {
+  background: #fff;
+}
+
+.price-box.suggested .btn {
+  background: #fff;
+  color: var(--color);
+}
 
 
 
