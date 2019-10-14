@@ -217,6 +217,9 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: 0.7s;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .slider-slide.active {
@@ -224,6 +227,45 @@ body {
   pointer-events: all;
 }
 
+.slide-img {
+  width: 420px;
+  height: 420px;
+  flex-shrink: 0;
+}
+
+.slide-info {
+  height: 430px;
+  width: 450px;;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.slide-title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.slide-title span {
+  color: var(--color);
+  font-weight: bold;
+}
+
+.slide-text {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 14px;
+  line-height: 20px;
+  width: 400px;
+}
+
+.slide-btn {
+  font-size: 24px;
+}
 
 
 /* form */
