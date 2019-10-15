@@ -34,11 +34,13 @@ body {
   padding: 10px 30px;
   display: inline-block;
   transition: 0.5s;
+  outline: none;
 }
 
 .btn:hover {
   background: var(--colorHover);
 }
+
 
 .section {
   padding: 30px 0 65px;
@@ -522,7 +524,9 @@ textarea.form-control {
   color: var(--color);
 }
 
-
+.price-box.suggested .btn:hover {
+  background: #ddd;
+}
 
 /* news section */
 
